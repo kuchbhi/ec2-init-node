@@ -6,4 +6,15 @@ git pull git://github.com/joyent/node.git
 ./configure
 make
 sudo make install
+cd ..
+
+wget http://redis.googlecode.com/files/redis-2.4.17.tar.gz
+tar xzf redis-2.4.17.tar.gz
+mv redis-2.4.17 redis
+cd redis
+make
+PATH=$PATH:~/redis/src
+export PATH
+cd ..
+
 
