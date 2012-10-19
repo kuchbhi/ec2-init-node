@@ -5,5 +5,5 @@ cd nodejs
 git pull git://github.com/joyent/node.git
 ./configure
 make
-make install
+sudo make install
 
