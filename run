@@ -1,0 +1,9 @@
+mkdir tmp
+cd tmp
+git init nodejs
+cd nodejs
+git pull git://github.com/joyent/node.git
+./configure
+make
+make install
+
